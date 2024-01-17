@@ -1,0 +1,84 @@
+/* biến */
+:root{
+    --tenBien: pink;
+    --main-color: green;
+
+    --fix-width: 500px;
+}
+
+
+html{
+    color: red;
+}
+
+h5{
+    color: var(--tenBien);
+}
+
+h6{
+    color: var(--main-color);
+}
+
+/* gọi bằng thẻ tag */
+h3 {
+    color: blue;
+}
+/* dấu . gọi thông qua class */
+.heading4{
+    color: red;
+}
+/* dấu # thông qua id */
+#heading3{
+    color: green;
+}
+
+.heading4{
+    color:violet;
+}
+
+h4{
+    color: green;
+}
+
+h4#heading-t.heading4{
+    color:rgb(220, 55, 174);
+}
+
+#heading-t{
+    color:rgb(222, 116, 17);
+}
+
+
+.box{
+    width: 500px;
+    height: 500px;
+    background-color: blue;
+}
+
+.box1{
+    width: 50%;
+    height: 50%;
+    background-color: violet;
+}
+
+html{
+    font-size: 16px;
+}
+
+.cha{
+    font-size: 2em;
+}
+
+p{
+    font-size: 1em;
+}
+
+.box-x{
+    width: 50vw;
+    height: 50vh;
+    background-color: aquamarine;
+}
+
+
+
+
