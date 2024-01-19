@@ -1,0 +1,25 @@
+.heading,.paragragh{
+    /* màu chữ */
+    color:#fff;
+    /* màu nền chữ */
+    background-color: #5555fe;
+
+    /* căn chữ */
+    text-align: center;
+    /* chiều ngang */
+    width: 500px;
+    /* chiều dọc */
+    height: 80px;
+
+    /* độ cao của chữ */
+    line-height: 80px;
+    /* kích thước chữ */
+    font-size: 20px;
+    /* font chữ */
+    font-family: Arial, Helvetica, sans-serif;
+    /* độ đậm */
+    font-weight: bold;
+    /* in nghiêng */
+    font-style: italic;
+
+}
