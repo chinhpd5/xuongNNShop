@@ -1,3 +1,8 @@
+:root{
+    --color-red: rgb(34, 225, 72);
+    --color-blue: rgba(1,1,1,0.8);
+}
+
 .heading,.paragragh{
     /* màu chữ */
     color:#fff;
@@ -22,4 +27,102 @@
     /* in nghiêng */
     font-style: italic;
 
+}
+
+.box{
+    width: calc(50% + 20px);
+    height: 100px;
+    background-color: #bfff40;
+    color: #fff;
+
+    /* padding-top: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 20px; */
+
+    padding: 20px;
+
+    /* border-style: solid;
+    border-color: #333;
+    border-width: 1px; */
+
+    border: 2px dashed #333;
+    box-sizing: border-box;
+    /* margin-left: 50px; */
+    margin: 0;
+
+    position: fixed;
+    top: 0;
+
+    z-index: 100;
+}
+
+.box:hover{
+    background-color: red;
+}
+
+.banner{
+    width: 100%;
+    height: 500px;
+    background-image: linear-gradient(45deg,rgba(255, 83, 218, 0.5),rgba(110, 242, 34, 0.5)), url(https://cdnphoto.dantri.com.vn/NfuBVDuayJy_Zfse7bdU4IdEBcg=/thumb_w/1020/2022/08/01/fpldocx-1659342580019.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 85%;
+
+    padding-top: 60px;
+}
+
+.banner__heading{
+    text-align: center;
+    font-size: 60px;
+    color: var(--color-red);
+    
+}
+
+/* .banner__heading:hover{
+    color: blue;
+} */
+
+.banner__heading:active{
+    color: pink;
+}
+
+.banner__sologan{
+    text-align: center;
+    font-size: 50px;
+}
+
+body{
+    height: 2000px;
+}
+
+.heading-3{
+    position: relative;
+    /* top: 50px;
+    left: 50px; */
+}
+
+.box-parent{
+    width: 500px;
+    height: 500px;
+    background-color: #5555fe;
+    position: relative;
+}
+
+.box-child{
+    width: 100px;
+    height: 100px;
+    background-color: pink;
+    position: absolute;
+    left: 0;
+    top: 50%;
+}
+
+.box-stiky{
+    width: 50px;
+    height: 50px;
+    background-color: #29bdbf;
+    position: sticky;
+    top: 110px;
+    z-index: 100;
 }
