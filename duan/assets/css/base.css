@@ -128,6 +128,8 @@
     width: 285px;
     height: 446px;
     position: relative;
+    background-color: #F4F5F7;
+
 }
 
 .product__img {
@@ -165,7 +167,6 @@
 
 .product__info{
     padding: 16px;
-    background-color: #F4F5F7;
 }
 
 .info__title{
@@ -197,4 +198,85 @@
     color: #b0b0b0;
     text-decoration: line-through;
     margin-left: 16px;
+}
+
+.product__overlay{
+    position: absolute;
+    /*width: 285px;
+    height: 446px;
+    top: 0;
+    left: 0; */
+
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(1,1,1,0.5);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    /* display: none; */
+    /* visibility: hidden; */
+    opacity: 0;
+
+    transition: all 0.3s ease-in;
+}
+
+.product:hover .product__overlay{
+    /* display: block;
+    display: flex; */
+
+    /* visibility: visible; */
+
+    opacity: 1;
+}
+
+/* button css */
+
+.btn{
+    /* reset về mặc định */
+    border: none;
+    background-color: transparent;
+    text-decoration: none;
+    outline: none;
+
+    /* css */
+    font-size: 16px;
+    font-weight: 400;
+    color: #B88E2F;
+    height: 48px;
+    min-width: 202px;
+    background-color: #fff;
+    border: 1.5px solid #B88E2F;
+
+}
+
+.btn:hover {
+    background-color: #B88E2F;
+    color: #fff;
+}
+
+.overlay_action{
+    display: flex;
+}
+
+.action__icon,.action__name{
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.action:hover .action__icon,.action:hover .action__name{
+    color: #B88E2F;
+}
+
+.action + .action {
+    margin-left: 20px;
+}
+
+.btn__addCart{
+    margin: 22px 0;
 }
