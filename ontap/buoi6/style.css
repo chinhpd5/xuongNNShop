@@ -1,0 +1,50 @@
+h1{
+    color: red;
+}
+
+/* Cách 1 */
+/* mobile */
+@media only screen and (max-width: 739px){
+    h1{
+        color: blue;
+    }
+}
+/* tablet */
+@media only screen and (min-width:740px) and (max-width: 1023px){
+    h1{
+        color: pink
+    }
+}
+
+
+/* Cách 2 */
+
+
+/* tablet */
+@media only screen and (max-width: 1023px){
+    h1{
+        color: pink
+    }
+}
+
+/* mobile */
+@media only screen and (max-width: 739px){
+    h1{
+        color: blue;
+    }
+}
+
+
+
+
+/* 
+    mobile:
+    -> 740
+
+    tablet
+    740 -> 1024
+
+    PC
+    1024 ->
+
+*/

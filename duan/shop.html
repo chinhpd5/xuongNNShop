@@ -15,7 +15,6 @@
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-    <!-- Thẻ chứa toàn bộ nội dung của trang chủ -->
     <div id="app">
         <!-- Header của trang chủ -->
         <header class="header">
@@ -45,7 +44,7 @@
 
             <div class="header__action">
                 <!-- user -->
-                <span id="login"><i class="fa-regular fa-user"></i></span>
+                <i class="fa-regular fa-user"></i>
                 <!-- search -->
                 <i class="fa-solid fa-magnifying-glass"></i>
                 <!-- heart -->
@@ -57,38 +56,8 @@
 
         </header>
 
-        <h1>Trang chủ</h1>
+        <h1>Trang shop</h1>
 
-        <div id="modal" class="modal">
-           
-            <div class="modal__content">
-                <!-- thẻ của phần đăng nhập -->
-            </div>
-            <div id="modal__overlay" class="modal__overlay"></div>
-        </div>
     </div>
-
-    
-    <script>
-        // lấy element của nút đăng nhập
-        var login = document.getElementById('login');
-
-        //lây modal
-        var modal = document.getElementById('modal');
-
-        // khai báo 1 sự kiện click bằng 1 function
-        // khi nhấn nút đăng nhập thì hiển thị modal
-        login.onclick = function(){
-            modal.style.display = 'flex';
-        }
-
-        // tắt Modal
-        var modal__overlay = document.getElementById('modal__overlay');
-
-        modal__overlay.onclick = function(){
-            modal.style.display = 'none';
-        }
-
-    </script>
 </body>
 </html>
