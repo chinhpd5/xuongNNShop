@@ -118,3 +118,123 @@
 .category__item_4{
     background-color: orange;
 }
+
+
+.btn__menu_tablet{
+    font-size: 24px;
+    display: none;
+}
+/* lớp phủ đen toàn màn hình */
+.menu__overlay{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.4);
+    display: none;
+}
+/* menu */
+.menu__tablet{
+    position: fixed;
+    width: 50vw;
+    top: 0;
+    right: 0;
+    background-color: #fff;
+    height: 50vh;
+    /* display: none; */
+    transform: translateX(100%);
+    transition: transform linear 0.3s;
+}
+
+.btn__close{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 24px;
+}
+
+.menu__tablet ul li{
+    list-style: none;
+    padding: 10px 20px;
+    background-color: #6161ff;
+}
+.menu__tablet ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 24px;
+}
+
+.menu__tablet ul li:hover {
+    background-color: #fff;
+}
+
+.menu__tablet ul li:hover a{
+    color: #6161ff;
+}
+
+#input__menu:checked ~ .menu__overlay{
+    display: block;
+}
+
+#input__menu:checked ~ .menu__tablet{
+    /* display: block; */
+    transform: translateX(0%);
+
+}
+
+
+/* tablet 740px - 1024px*/
+
+@media only screen and (max-width: 1023px) {
+    .btn__menu_tablet{
+        display: block;
+    }
+
+    .menu{
+        display: none;
+    }
+
+
+    .container{
+        width: 90%;
+    }
+    .product{
+        flex-direction: column-reverse;
+    }
+    .product__picture{
+        width: 100%;
+    }
+    .product__infomation{
+        width: 100%;
+    }
+
+    .info__description{
+        display: none;
+    }
+
+    .category__item{
+        width: 50%;
+    }
+
+}
+
+/* mobie < 740px */
+@media (max-width: 739px){
+    .container{
+        width: 100%;
+    }
+    .product__infomation{
+        padding: 0;
+    }
+    .info__heading{
+        font-size: 22px;
+    }
+    .info__price{
+        font-size: 20px;
+        margin: 10px 0;
+    }
+    .category__item{
+        width: 100%;
+    }
+}

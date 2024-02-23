@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bài tập</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
@@ -12,6 +13,7 @@
             <div class="logo">
                 <img src="https://seeklogo.com/images/A/as-roma-logo-61DF23CC37-seeklogo.com.png" alt="" class="image">
             </div>
+
             <div class="menu">
                 <ul>
                     <li><a href="">Trang chủ</a></li>
@@ -21,6 +23,35 @@
                     <li><a href="">Tài khoản</a></li>
                 </ul>
             </div>
+
+
+            <label for="input__menu">
+                <!-- nút Bars menu -->
+                <i class="fa-solid fa-bars btn__menu_tablet"></i>
+            </label>
+            <input type="checkbox" name="" id="input__menu" hidden>
+
+            <!-- lớp đen trong suốt -->
+            <label for="input__menu" class="menu__overlay"></label>
+
+
+            <!-- menu của tablet và mobile -->
+            <div class="menu__tablet">
+                <label for="input__menu">
+                    <i class="fa-regular fa-rectangle-xmark btn__close"></i>
+                </label>
+                
+                <ul>
+                    <li><a href="">Trang chủ</a></li>
+                    <li><a href="">Cửa hàng</a></li>
+                    <li><a href="">Tin tức</a></li>
+                    <li><a href="">Liên hệ</a></li>
+                    <li><a href="">Tài khoản</a></li>
+                    <li><a href="">Giỏ hàng</a></li>
+                    <li><a href="">Yêu thích</a></li>
+                </ul>
+            </div>
+
         </nav>
 
         <!-- ví dụ 1 -->
@@ -47,6 +78,7 @@
                     Adipisci cupiditate ut sequi vel expedita corporis, 
                     deleniti ex explicabo similique incidunt!</p>
             </div>
+
             <div class="category__item category__item_2">
                 <h3 class="item__title">Mỹ phẩm</h3>
                 <p class="item__description">
@@ -54,6 +86,7 @@
                     Adipisci cupiditate ut sequi vel expedita corporis, 
                     deleniti ex explicabo similique incidunt!</p>
             </div>
+
             <div class="category__item category__item_3">
                 <h3 class="item__title">Trang sức</h3>
                 <p class="item__description">
@@ -61,6 +94,7 @@
                     Adipisci cupiditate ut sequi vel expedita corporis, 
                     deleniti ex explicabo similique incidunt!</p>
             </div>
+
             <div class="category__item category__item_4">
                 <h3 class="item__title">Khác</h3>
                 <p class="item__description">
